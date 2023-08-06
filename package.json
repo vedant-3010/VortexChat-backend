@@ -5,11 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+    
   },
   "author": "vedant dandge",
   "license": "ISC",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
     "bcryptjs": "^2.4.3",
     "core-js": "^2.5.7",
     "dotenv": "^16.3.0",
